@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pre-booking form</title>
+		
+		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous"> 
+		
+<link rel="stylesheet" type="text/css" href="style.css">
+		
+</head>
+<body>
+	
+	<br>
+	<br>
+	<br>
+	<div class="container" >
+		<div class="row">
+		<div class="col-md-3">
+					
+		</div>
+				
+		<div class="col-md-6 main">
+					
+			<form action="http://localhost:3000/sign_up" method="post">				 
+			<h1> Pre-booking form</h1>
+							
+			<input class="box" type="text" name="name" id="name"
+			placeholder="Name" required /><br>
+							
+			<input class="box" type="email" name="email" id="email"
+			placeholder="E-Mail " required /><br>
+							
+			<input class="box" type="password" name="password"
+			id="password" placeholder="Password " required/><br>
+							
+			<input class="box" type="text" name="phone" id="phone"
+			placeholder="Phone Number " required/><br>
+
+			<input class="box" type="datetime" name="datetime"
+			id="datetime" placeholder="Please insert date(dd/mm/yy) and time(hh/mm/ss)" required/><br>
+           <!--<input type="date" id="date" placeholder="Select your date" value="Select Date"> 
+		   -->			<br>
+			<input type="submit" id="submitDetails" name="submitDetails" value="Submit"  /><br>
+					
+            
+			</form>
+					
+		</div>
+				
+				
+		<div class="col-md-3">
+		</div>
+				
+	</div>
+	</div>
+</body>
+<script>
+	function validateForm() {
+    const name =
+        document.getElementById("name").value;
+    const email =
+        document.getElementById("email").value;
+    const password =
+        document.getElementById("password").value;
+    const phone =
+        document.getElementById("phone").value;
+
+   
+    const nameError =
+        document.getElementById("name-error");
+    const emailError = document.getElementById(
+        "email-error"
+    );
+    const passwordError = document.getElementById(
+        "password-error"
+    );
+    const phoneError = document.getElementById(
+        "phone-error"
+    );
+
+
+    nameError.textContent = "";
+    emailError.textContent = "";
+    passwordError.textContent = "";
+    phoneError.textContent = "";
+    datetimeError.textContent = "";
+
+    let isValid = true;
+
+    if (name === "" || /\d/.test(name)) {
+        nameError.textContent =
+            "Please enter your name properly.";
+        isValid = false;
+    }
+
+    if (email === "" || !email.includes("@")) {
+        emailError.textContent =
+            "Please enter a valid email address.";
+        isValid = false;
+    }
+
+    if (password === "" || password.length < 6) {
+        passwordError.textContent =
+            "Please enter a password with at least 6 characters.";
+        isValid = false;
+    }
+
+    if (phone === "") {
+        phoneError.textContent =
+            "Please enter your valid contact number.";
+        isValid = false;
+    }
+
+    return isValid;
+}
+</script>
+</html>

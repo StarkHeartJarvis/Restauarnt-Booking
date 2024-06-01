@@ -1,0 +1,202 @@
+
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 10px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+h1{
+    color: white;
+    font-size: 400%;
+    align-content: center;
+    font-family: "cosmic sans-serif"
+}
+h2{
+    color: #0d6bb8;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    font-family: "cosmic sans-serif"
+}
+h3{
+    color: white;
+    font-size: 1.5rem;
+}
+h4{
+    color: black;
+}
+h5{
+    color: white;
+    font-size: 1.2rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+.abproject p{
+    color: white;
+    font-family: "cosmic sans-serif";
+    font-size: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding-bottom: 50px;
+}
+
+/* CSSS for navbar section */
+
+
+
+
+
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: rgb(255, 255, 255);
+}
+.food-menu-box{
+    width: 43%;
+    margin: 3%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 30%;
+        float: none;
+        margin: 1% auto;
+    }
+    .feedback{
+        font-size: 120%;
+
+    }
+    .text{
+        font-size: 300%;
+    }
+    .abproject p{
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .Timings {
+        margin-left: 15%;
+        margin-right: 15%;
+        border-left: solid white;
+        border-bottom: solid white;
+        border-right: solid white;
+        border-top: solid white;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 3% 0 0 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 5% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
